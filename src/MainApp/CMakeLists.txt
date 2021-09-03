@@ -8,3 +8,5 @@ target_include_directories(basic PUBLIC ${Vulkan_INCLUDE_DIR})
 
 message ("vulkan library ${Vulkan_LIBRARIES}")
 target_link_libraries(basic PUBLIC ${Vulkan_LIBRARIES} Toolkit)
+
+install(TARGETS basic DESTINATION bin2)
